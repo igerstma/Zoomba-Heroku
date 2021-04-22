@@ -18,9 +18,9 @@ def result():
         # return jsonify(request.args)
 
     if request.method == 'GET':
-        c = direction
+        output = direction
         direction = "stop"
-        return c
+        return jsonify(output)
 
 if __name__ == "_main_":
     app.run(debug=True)
