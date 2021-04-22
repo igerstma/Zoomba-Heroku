@@ -18,7 +18,8 @@ def result():
         # return jsonify(request.args)
 
     if request.method == 'GET':
-        output = direction
+        output = {}
+        output["Direction"] = direction
         direction = "stop"
         return jsonify(output)
 
